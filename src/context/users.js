@@ -46,7 +46,7 @@ const reducer = (state, { type, payload }) => {
       role = payload.role
       if(userData?.id === data?.id || role === "admin" || role === "moderator" ) {
         usersCopy = [...state.users]
-        usersCopy = usersCopy.filter(el => el.id === user.id)
+        usersCopy = usersCopy.filter(el => el.id !== data.id)
         return {
           ...state,
           user: userData.id === data.id ? null : state.user,
@@ -64,8 +64,8 @@ const reducer = (state, { type, payload }) => {
       data = payload.data
       role = payload?.role
       usersCopy = [...state.users]
-      let userIndex = usersCopy?.findIndex(el => el.id === userData.id)
-      let userObj = usersCopy?.find(el => el.id === userData.id)
+      let userIndex = usersCopy?.findIndex(el => el.id === data.id)
+      let userObj = usersCopy?.find(el => el.id === data.id)
       if(userData?.id === data?.id && userIndex >= 0  ) {
         usersCopy[userIndex] = {
           ...data,
