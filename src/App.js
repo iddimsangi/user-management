@@ -33,9 +33,10 @@ function App() {
           <h1>
             {userDetails && (
               <span>
-                Hello <Link to="/profile">{userDetails?.firstName}</Link>
+                Hello <Link to={`/users/${2}`}>{userDetails?.firstName}</Link>
               </span>
             )}
+            
             &nbsp;
             <button
               onClick={() => {

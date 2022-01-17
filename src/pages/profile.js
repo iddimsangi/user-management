@@ -39,43 +39,66 @@ const Profile = ({ userDetails, userRole }) => {
   return (
     <div>
       {userDetails && (
-        <form onSubmit={onSubmithandler}>
-          first name:{" "}
-          <input
-            type="text"
-            name="firstName"
-            onChange={onChangeHandler}
-            value={formData.firstName}
-          />{" "}
-          <br />
-          last name:{" "}
-          <input
-            type="text"
-            name="lastName"
-            onChange={onChangeHandler}
-            value={formData.lastName}
-          />{" "}
-          <br />
-          email:{" "}
-          <input
-            type="email"
-            name="email"
-            onChange={onChangeHandler}
-            value={formData.email}
-          />{" "}
-          <br />
-          password:{" "}
-          <input
-            type="password"
-            name="password"
-            onChange={onChangeHandler}
-            value={formData.password}
-          />{" "}
-          <br />
-          active status: <input type="checkbox" /> <br />
-          {message && <p>{message}</p>}
-          <button>Update</button>
-        </form>
+         <form onSubmit={onSubmithandler}>
+         <h1>UPDATE</h1>
+         <div className="icon">
+           <i className="fas fa-user-circle"></i>
+         </div>
+         <div className="formcontainer">
+         <div className="container">
+         <label for="mail"><strong>First Name</strong></label>
+           <input type="text"  onChange={onChangeHandler}  value={formData.firstName}  placeholder="Enter Your First Name" name="firstName" required/>
+           <label for="mail"><strong>Last Name</strong></label>
+           <input type="text"  onChange={onChangeHandler} value={formData.lastName}  placeholder="Enter Your Last Name" name="lastName" required/>
+           <label for="mail"><strong>E-mail</strong></label>
+           <input type="text"  onChange={onChangeHandler} value={formData.email}  placeholder="Enter E-mail" name="mail" required/>
+           <label for="psw"><strong>Password</strong></label>
+           <input type="password" onChange={onChangeHandler} value={formData.password} placeholder="Enter Password" name="psw" required/>
+
+           <label for="#"><strong>active status:</strong></label>
+           <input type="checkbox" />
+         </div>
+         {message&& <p style={{color:'green'}}>{message}</p>}
+         <button type="submit"><strong>UPDATE</strong></button>
+         </div>
+       </form>
+        // <form onSubmit={onSubmithandler}>
+        //   first name:{" "}
+        //   <input
+        //     type="text"
+        //     name="firstName"
+        //     onChange={onChangeHandler}
+        //     value={formData.firstName}
+        //   />{" "}
+        //   <br />
+        //   last name:{" "}
+        //   <input
+        //     type="text"
+        //     name="lastName"
+        //     onChange={onChangeHandler}
+        //     value={formData.lastName}
+        //   />{" "}
+        //   <br />
+        //   email:{" "}
+        //   <input
+        //     type="email"
+        //     name="email"
+        //     onChange={onChangeHandler}
+        //     value={formData.email}
+        //   />{" "}
+        //   <br />
+        //   password:{" "}
+        //   <input
+        //     type="password"
+        //     name="password"
+        //     onChange={onChangeHandler}
+        //     value={formData.password}
+        //   />{" "}
+        //   <br />
+        //   active status: <input type="checkbox" /> <br />
+        //   {message && <p>{message}</p>}
+        //   <button>Update</button>
+        // </form>
       )}
     </div>
   );

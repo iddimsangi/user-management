@@ -50,9 +50,9 @@ const Register = () => {
           <label for="mail"><strong>Last Name</strong></label>
           <input type="text"  onChange={onChangeHandler}  placeholder="Enter Your Last Name" name="lastName" required/>
           <label for="mail"><strong>E-mail</strong></label>
-          <input type="text"  onChange={onChangeHandler}  placeholder="Enter E-mail" name="mail" required/>
+          <input type="text"  onChange={onChangeHandler}  placeholder="Enter E-mail" name="email" required/>
           <label for="psw"><strong>Password</strong></label>
-          <input type="password" onChange={onChangeHandler} placeholder="Enter Password" name="psw" required/>
+          <input type="password" onChange={onChangeHandler} placeholder="Enter Password" name="password" required/>
         </div>
         {message&& <p style={{color:'red'}}>{message}</p>}
         <button type="submit"><strong>SIGN UP</strong></button>

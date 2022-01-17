@@ -14,7 +14,7 @@ const Home = ({ userRole, userDetails }) => {
       {user && userRole?.name === "admin" ? (
         users?.map((userData) => <User key={userData.id} user={userData} />)
       ) : (
-        <div>{user ? <div>
+        <div>{user ? <div style={{width:'15rem', backgroundColor:'#ccc', boxShadow:'rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px'}}> 
             <span>
                 name: {userDetails?.firstName} {userDetails?.lastName}
             </span><br />
@@ -32,3 +32,4 @@ const Home = ({ userRole, userDetails }) => {
 };
 
 export default Home;
+// box-shadow: ;
