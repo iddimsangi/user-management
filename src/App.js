@@ -33,7 +33,7 @@ function App() {
           <h1>
             {userDetails && (
               <span>
-                Hello <Link to={`/users/${2}`}>{userDetails?.firstName}</Link>
+                Hello <Link to="/users/:id">{userDetails?.firstName}</Link>
               </span>
             )}
             
