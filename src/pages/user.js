@@ -4,7 +4,7 @@ const User = () => {
   return (
     <div>
       <div class="card">
-        <img src={profile} alt="Avatar" style="width:100%" />
+        <img src={profile} alt="Avatar" style={{width:"100%"}}/>
         <div class="container">
           <h4>
             <b>John Doe</b>

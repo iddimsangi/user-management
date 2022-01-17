@@ -33,7 +33,7 @@ function App() {
           <h1>
             {userDetails && (
               <span>
-                Hello <Link to="/users/:id">{userDetails?.firstName}</Link>
+                Hello <Link to="/users">{userDetails?.firstName}</Link>
               </span>
             )}
             
@@ -63,7 +63,7 @@ function App() {
           />
           <Route path="/register" exact element={<Register />} />
           <Route path="/login" exact element={<Login />} />
-          <Route path="/users/:id" exact element={<User />} />
+          <Route path="/users" exact element={<User />} />
           <Route
             path="/profile"
             exact

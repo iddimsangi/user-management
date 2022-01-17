@@ -31,6 +31,7 @@ const Profile = ({ userDetails, userRole }) => {
         user: userDetails,
       },
     });
+    navigate("/")
   };
 
   useEffect(() => {
