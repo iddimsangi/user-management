@@ -63,43 +63,7 @@ const Profile = ({ userDetails, userRole }) => {
          <button type="submit"><strong>UPDATE</strong></button>
          </div>
        </form>
-        // <form onSubmit={onSubmithandler}>
-        //   first name:{" "}
-        //   <input
-        //     type="text"
-        //     name="firstName"
-        //     onChange={onChangeHandler}
-        //     value={formData.firstName}
-        //   />{" "}
-        //   <br />
-        //   last name:{" "}
-        //   <input
-        //     type="text"
-        //     name="lastName"
-        //     onChange={onChangeHandler}
-        //     value={formData.lastName}
-        //   />{" "}
-        //   <br />
-        //   email:{" "}
-        //   <input
-        //     type="email"
-        //     name="email"
-        //     onChange={onChangeHandler}
-        //     value={formData.email}
-        //   />{" "}
-        //   <br />
-        //   password:{" "}
-        //   <input
-        //     type="password"
-        //     name="password"
-        //     onChange={onChangeHandler}
-        //     value={formData.password}
-        //   />{" "}
-        //   <br />
-        //   active status: <input type="checkbox" /> <br />
-        //   {message && <p>{message}</p>}
-        //   <button>Update</button>
-        // </form>
+
       )}
     </div>
   );
